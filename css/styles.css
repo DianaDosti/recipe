@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(249, 252, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+.mobile-container{
+    
+    height: 100vh;
+    background: #f3f3f3;
+    margin-top: 23px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 5px #333;
+    
+}
+.opacityContainer{
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    max-width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header input{
+    border-radius: 10px;
+    border: 2px solid rgb(214, 198, 198);
+    margin-right: 3px;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+header button{
+    background: none;
+    color:  rgb(129, 36, 172);
+    font-size: 1rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+.fav-container{
+    background-color: rgb(214, 198, 198);
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fav-container h2{
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+}
+.fav-container .fav-meals{
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.fav-container .fav-meals li{
+    margin: 5px;
+    width: 85px;
+}
+.fav-container .fav-meals li img{
+    border: 2px solid #fff;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.fav-container .fav-meals li span{
+    font-size: 0.7rem;
+    letter-spacing: -1px;
+}
+.meal{
+    margin: 1.5rem;
+    box-shadow: 0 5px 8px #333;
+    border-radius: 2px;
+    overflow: hidden;
+    
+}
+.meal .meal-header{
+    position: relative;
+}
+.meal .meal-header .random{
+    position: absolute;
+    top: 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgb(243, 235, 235, 0.9);
+    padding: 2px 3px;
+}
+.meal .meal-header img{
+height: 260px;
+width: 100%;
+object-fit: cover;
+}
+.meals .meal .meal-body{
+    color: rgb(106, 29, 141);
+    border-bottom: 2px solid rgb(106, 29, 141);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.meals .meal .meal-body button{
+    background: transparent;
+    border: none;
+    color: thistle;
+    font-size: 1.2rem;
+    outline: none;
+}
+.meals .meal .meal-body .youtube-link{
+    font-size: 12px;
+    cursor: pointer;
+}
+.meals .meal .meal-body .youtube-link:hover{
+    color: rgb(207, 14, 46);
+}
+.meals .meal-body  .fa-btn .active{
+    color: rgb(106, 29, 141);
+    border: none;
+}
